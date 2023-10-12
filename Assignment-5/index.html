@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Travel Website Design</title>
+	<link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<script src="script.js" defer></script>
+</head>
+<body>
+<header class="header">
+    <div id="menu-btn" class="fas fa-bars"></div>
+    <a href="#" class="logo"> <i class="fas fa-paper-plane"></i>travel</a>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="destination.html">Destination</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="testimonial.html">Testimonials</a>
+    </nav>
+    <a href="#book-form" class="btn">book now</a>
+</header>
+
+<section class="home" id="home">
+
+    <div class="content">
+        <span>follow us</span>
+        <h3>to the unknown</h3>
+        <p>Welcome to our Travel Website</p>
+        <a href="#" class="button">book now</a>
+    </div>
+</section>
+
+<section class="book-form" id="book-form">
+    <div class="form-container">
+        <h2>Book Your Trip</h2>
+        <form action="#" method="post">
+            <label for="destination">Where?</label>
+            <input type="text" id="destination" name="destination" placeholder="Enter your destination" required>
+
+            <label for="date">When?</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="details">Additional Details</label>
+            <textarea id="details" name="details" placeholder="Any specific details or preferences"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</section>
+</body>
+</html>

@@ -1,0 +1,7 @@
+@mixin boxShadowInterpolation($x, $y, $color) {
+  box-shadow: $x $y 0 $color;
+
+  &:hover {
+    box-shadow: 0 0 0 $color;
+  }
+}

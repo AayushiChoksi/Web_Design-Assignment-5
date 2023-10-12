@@ -1,0 +1,27 @@
+// Import base files
+@import 'base/variables';
+@import 'base/custom';
+@import 'base/mixins';
+@import 'base/functions';
+@import 'base/fonts';
+
+// Import components
+@import 'components/buttons';
+@import 'components/forms';
+@import 'components/placeholders';
+
+// Import layout components
+@import 'layout/header';
+@import 'layout/body';
+
+// Import pages
+@import 'pages/home';
+
+
+// Import themes
+//@import 'themes/dark-theme';
+//@import 'themes/light-theme';
+
+//@import 'responsive';
+//@import 'maps';
+

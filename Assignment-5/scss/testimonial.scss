@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins:wght@600&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+$blue: #2989d5;
+$black: #111;
+$white: #fff;
+$light-color: #aaa;
+$bg-color: #222;
+$black-bg: rgba(17, 17, 17, .7);
+$border: .2rem solid $blue;
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9rem;
+
+    &::-webkit-scrollbar {
+        width: 1rem;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: $black;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $blue;
+    }
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: $bg-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 9%;
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        margin-right: 1rem;
+
+        a {
+            font-size: 1.7rem;
+            color: $light-color;
+            margin: 0 1rem;
+
+            &:hover {
+                color: $blue;
+            }
+        }
+    }
+
+    .btn {
+        margin-top: 1rem;
+        padding: 1rem 3rem;
+        font-size: 1.7rem;
+        color: $blue;
+        border: $border;
+        border-radius: 5rem;
+        cursor: pointer;
+        background: none;
+
+        &:hover {
+            background: $blue;
+            color: $black;
+        }
+    }
+
+    .logo {
+        font-size: 2.5rem;
+        color: $white;
+        font-weight: bolder;
+        display: flex;
+        align-items: center;
+
+        i {
+            color: $blue;
+            padding-right: 0.5rem;
+        }
+    }
+
+    #menu-btn {
+        font-size: 2.5rem;
+        color: $white;
+        cursor: pointer;
+        display: none;
+    }
+}
+
+.testimonial-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 50px;
+    margin-top: 50px;
+    z-index: 1; /* Adjust the z-index */
+}
+
+.testimonial {
+    padding: 0px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
+    transition: transform 0.3s ease;
+    font-size: 1.6rem;
+}
+
+.testimonial img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.author {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Different layouts for each testimonial */
+.testimonial:nth-child(1) {
+    background-color: #ffcccb; /* Light coral background */
+}
+
+.testimonial:nth-child(2) {
+    background-color: #add8e6; /* Light blue background */
+    grid-column: span 2;
+  
+}
+
+.testimonial:nth-child(3) {
+    background-color: #c1ffc1; /* Pale green background */
+    grid-row: span 2;
+}
+
+.testimonial:nth-child(4) {
+    background-color: #ffd700; /* Gold background */
+}
+
+.testimonial:nth-child(5) {
+    background-color: #e0ffff; /* Light cyan background */
+    grid-row: span 2;
+    grid-column: 3;
+}
+.testimonial:nth-child(6) {
+    background-color: #e0ffff; /* Light cyan background */
+    grid-row: span 1;
+    grid-column: 2;
+}
+
+.testimonial:hover {
+    transform: scale(1.05);
+}
+.destination-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 50px;
+}
+
+.destination {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
+    transition: transform 0.3s ease; /* Add a transition effect */
+}
+
+.destination img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+}
+
+.destination h2 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.destination p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Hover effect for destinations */
+.destination:hover {
+    transform: scale(1.05);
+}

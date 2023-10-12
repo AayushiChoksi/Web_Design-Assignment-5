@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins:wght@600&display=swap");
+:root {
+  --main-font: "Poppins", sans-serif;
+}
+
+.header .btn, .btn-secondary, .btn-primary {
+  padding: 10px;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #3498db;
+  color: #fff;
+}
+.btn-primary:hover {
+  background-color: #217dbb;
+}
+
+.btn-secondary {
+  background-color: #fff;
+  color: #3498db;
+}
+.btn-secondary:hover {
+  background-color: white;
+}
+
+.book-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.book-form .form-container {
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background to make text more readable */
+}
+.book-form .form-container form {
+  display: flex;
+  flex-direction: column;
+}
+.book-form .form-container form label {
+  margin-bottom: 8px;
+}
+.book-form .form-container form input,
+.book-form .form-container form textarea {
+  margin-bottom: 16px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.book-form .form-container form input[type=submit] {
+  background-color: #3498db;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+.header .btn, .btn-primary, .btn-secondary {
+  padding: 10px;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 9%;
+}
+.header .navbar {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+.header .navbar a {
+  font-size: 1.7rem;
+  color: #ddd;
+  margin: 0 1rem;
+}
+.header .navbar a:hover {
+  color: #3498db;
+}
+.header .logo {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0.5rem 0 rgba(17, 17, 17, 0.3);
+}
+.header .logo:hover {
+  box-shadow: 0 0 0 rgba(17, 17, 17, 0.3);
+}
+.header .logo i {
+  color: #3498db;
+  padding-right: 0.5rem;
+}
+.header #menu-btn {
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+body {
+  background: #000;
+  overflow-x: hidden;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/images/nature-3362956_1280.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+section {
+  padding: 3rem 9%;
+}
+
+.home {
+  margin-top: 9rem;
+  margin: 0 auto;
+  width: 90%;
+  height: auto;
+  border-radius: 1rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/images/nature.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  min-height: 80vh;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
+.home .content {
+  text-align: center;
+}
+.home .content span {
+  font-weight: bolder;
+  color: transparent;
+  -webkit-text-stroke: 0.1rem #fff;
+  font-size: 4vw;
+  display: block;
+}
+.home .content h3 {
+  font-size: 6vw;
+  color: #fff;
+}
+.home .content p {
+  max-width: 60rem;
+  margin: 1rem auto;
+  font-size: 1.4rem;
+  color: #ddd;
+  line-height: 2;
+}
+.home .button {
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+  color: #3498db;
+  border: 1px solid #ddd;
+  border-radius: 5rem;
+  cursor: pointer;
+  background: none;
+}
+.home .button:hover {
+  background: #3498db;
+  color: #000;
+}/*# sourceMappingURL=style.css.map */

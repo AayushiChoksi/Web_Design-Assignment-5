@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins:wght@600&display=swap");
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --main-font: "Poppins", sans-serif;
+  --spacing-unit: 8px;
+  --tablet-breakpoint: 768px;
+  --desktop-breakpoint: 1024px;
+  --blue: #2989d5;
+  --black: #111;
+  --white: #fff;
+  --light-color: #aaa;
+  --bg-color: #222;
+  --black-bg: rgba(17, 17, 17, 0.7);
+  --border: 0.2rem solid var(--blue);
+}
+
+.header .btn {
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+  color: #2989d5;
+  border: 0.2rem solid #2989d5;
+  border-radius: 5rem;
+  cursor: pointer;
+  background: none;
+}
+.header .btn:hover {
+  background: #2989d5;
+  color: #111;
+}
+
+/* Your existing styles here */
+.book-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.book-form .form-container {
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background to make text more readable */
+}
+.book-form .form-container form {
+  display: flex;
+  flex-direction: column;
+}
+.book-form .form-container form label {
+  margin-bottom: 8px;
+}
+.book-form .form-container form input,
+.book-form .form-container form textarea {
+  margin-bottom: 16px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.book-form .form-container form input[type=submit] {
+  background-color: #3498db;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+/* Add additional styling as needed */
+* {
+  font-family: var(--main-font);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 0.5625rem;
+}
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+html::-webkit-scrollbar-track {
+  background: #111;
+}
+html::-webkit-scrollbar-thumb {
+  background: #2989d5;
+}
+
+body {
+  background: #111;
+  overflow-x: hidden;
+  background-image: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(nature-3362956_1280.jpg); /* Replace with your image file path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+section {
+  padding: 3rem 9%;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #222;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 9%;
+}
+.header .navbar {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+.header .navbar a {
+  font-size: 1.7rem;
+  color: #aaa;
+  margin: 0 1rem;
+}
+.header .navbar a:hover {
+  color: #2989d5;
+}
+.header .logo {
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 0.5rem rgba(17, 17, 17, 0.3);
+}
+.header .logo i {
+  color: #e74c3c;
+  padding-right: 0.5rem;
+}
+.header #menu-btn {
+  font-size: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+.home {
+  margin-top: 9rem;
+  margin: 0 auto;
+  width: 90%;
+  height: auto;
+  border-radius: 1rem;
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(nature.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  min-height: 80vh;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
+.home .book-form {
+  position: absolute;
+  top: 100%; /* Position it below the .home section */
+  left: 0;
+  width: 100%;
+  background-image: url("your-background-image.jpg"); /* Replace with your image file path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.home .book-form .form-container {
+  max-width: 400px;
+  margin: 0 auto; /* Center the form container horizontally */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background to make text more readable */
+}
+.home .book-form .form-container form {
+  display: flex;
+  flex-direction: column;
+}
+.home .book-form .form-container form label {
+  margin-bottom: 8px;
+}
+.home .book-form .form-container form input,
+.home .book-form .form-container form textarea {
+  margin-bottom: 16px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.home .book-form .form-container form input[type=submit] {
+  background-color: #3498db;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+}
+.home .content {
+  text-align: center;
+}
+.home .content span {
+  font-weight: bolder;
+  color: transparent;
+  -webkit-text-stroke: 0.1rem #fff;
+  font-size: 4vw;
+  display: block;
+}
+.home .content h3 {
+  font-size: 6vw;
+  color: #fff;
+}
+.home .content p {
+  max-width: 60rem;
+  margin: 1rem auto;
+  font-size: 1.4rem;
+  color: #aaa;
+  line-height: 2;
+}
+.home .button {
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+  color: #2989d5;
+  border: 0.2rem solid #2989d5;
+  border-radius: 5rem;
+  cursor: pointer;
+  background: none;
+}
+.home .button:hover {
+  background: #2989d5;
+  color: #111;
+}
+@media (max-width: 991px) {
+  .home html {
+    font-size: 55%;
+  }
+  .home .header {
+    padding: 1.5rem 2rem;
+  }
+  .home section {
+    padding: 3rem 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .home #menu-btn {
+    display: inline-block;
+  }
+  .home .header .navbar {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background: #222;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  .home .header .navbar.active {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .home .header .navbar a {
+    margin: 2rem;
+    font-size: 2rem;
+    display: block;
+  }
+  .home html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 450px) {
+  .home html {
+    font-size: 50%;
+  }
+  .home .header {
+    padding: 1.5rem 2rem;
+  }
+}/*# sourceMappingURL=style.css.map */

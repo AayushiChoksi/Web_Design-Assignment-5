@@ -1,0 +1,69 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: $bg-color;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 9%;
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+
+  
+  
+      a {
+        font-size: 1.7rem;
+        
+        // Conditionally apply styles based on a theme variable
+        @if $theme == 'light' {
+          color: $light-color;
+        } @else {
+          color: $blue;
+        }
+  
+        margin: 0 1rem;
+  
+        &:hover {
+          // Conditionally apply styles on hover
+          @if $theme == 'light' {
+            color: $blue;
+          } @else {
+            color: $white;
+          }
+        }
+      }
+    }
+  
+    .btn {
+      @extend %button-styles;
+    }
+  
+    .logo {
+      font-size: 2.0rem;
+      color: $white;
+      font-weight: bolder;
+      display: flex;
+      align-items: center;
+  
+      @include boxShadowInterpolation(0, 0.5rem, rgba(17, 17, 17, 0.3));
+  
+      i {
+        color: map-get($colors, accent);
+        padding-right: 0.5rem;
+      }
+    }
+  
+    #menu-btn {
+      font-size: 2.0rem;
+      color: $white;
+      cursor: pointer;
+      display: none;
+    }
+  }
+  

@@ -1,0 +1,58 @@
+.home {
+  margin-top: 9rem;
+  margin: 0 auto;
+  width: 90%;
+  height: auto;
+  border-radius: 1rem;
+  background: linear-gradient($black-bg, $black-bg), url(/images/nature.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  min-height: 80vh;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  padding-bottom: 5rem;
+  
+    .content {
+      text-align: center;
+  
+      span {
+        font-weight: bolder;
+        color: transparent;
+        -webkit-text-stroke: 0.1rem $white;
+        font-size: 4vw;
+        display: block;
+      }
+  
+      h3 {
+        font-size: 6vw;
+        color: $white;
+      }
+  
+      p {
+        max-width: 60rem;
+        margin: 1rem auto;
+        font-size: 1.4rem;
+        color: $light-color;
+        line-height: 2;
+      }
+    }
+  
+    .button {
+      margin-top: 1rem;
+      padding: 1rem 3rem;
+      font-size: 1.7rem;
+      color: $blue;
+      border: $border;
+      border-radius: 5rem;
+      cursor: pointer;
+      background: none;
+  
+      &:hover {
+        background: $blue;
+        color: $black;
+      }
+    }
+  }
+  

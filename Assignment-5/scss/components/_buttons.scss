@@ -1,0 +1,21 @@
+@import 'placeholders'; 
+.btn-primary {
+    @extend %button-styles;
+    background-color: $blue;
+    color: $white;
+  
+    &:hover {
+      background-color: darken($blue, 10%);
+    }
+  }
+  
+  .btn-secondary {
+    @extend %button-styles;
+    background-color: $white;
+    color: $blue;
+  
+    &:hover {
+      background-color: lighten($white, 10%);
+    }
+  }
+  
